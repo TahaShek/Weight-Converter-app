@@ -17,6 +17,19 @@ EnterWeight.addEventListener("input", function (e) {
   grams.innerHTML = kg * 1000;
   pound.innerHTML = kg * 2.20462;
   Ounces.innerHTML = kg * 35.274;
+
+
+  if(grams.innerHTML==0 && pound.innerHTML==0 && Ounces.innerHTML ==0){
+    output.style.visibility = "hidden";
+    return;
+  }
+
+  if(grams.innerHTML==='' && pound.innerHTML=='' && Ounces.innerHTML ==){
+    output.style.visibility = "hidden";
+    return;
+  }
+
+ 
 });
 
 
@@ -28,10 +41,3 @@ EnterWeight.addEventListener("input", function (e) {
 
 
 
-<div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Ounces</div>
-  <div class="card-body">
-    <h5 class="card-title">Weight In Ounces</h5>
-    <p class="card-text" id="ozOutput"></p>
-  </div>
-</div>
