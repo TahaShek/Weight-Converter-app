@@ -18,13 +18,16 @@ EnterWeight.addEventListener("input", function (e) {
   pound.innerHTML = kg * 2.20462;
   Ounces.innerHTML = kg * 35.274;
 
+//  agar input 0 ha tu visibility show ni krni 
 
   if(grams.innerHTML==0 && pound.innerHTML==0 && Ounces.innerHTML ==0){
     output.style.visibility = "hidden";
     return;
   }
 
-  if(grams.innerHTML==='' && pound.innerHTML=='' && Ounces.innerHTML ==){
+//   agar input field empty ha tu kch show ni krna 
+
+  if(grams.innerHTML==='' && pound.innerHTML=='' && Ounces.innerHTML ==0){
     output.style.visibility = "hidden";
     return;
   }

@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Weight App</title>
   </head>
@@ -32,32 +37,49 @@
           </div>
         </div>
 
-        <div class="output">
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+
+        
+        
+      </div>
+
+      <div class="output">
+<div class="row">
+    
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
                 <div class="card-header">Grams</div>
                 <div class="card-body">
-                  <h5 class="card-title">Weight In Grams </h5>
-                  <p class="card-text" id="gramsOutput" >g</p>
-                </div>
-              </div>
-
-              <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                <div class="card-header">Pounds</div>
-                <div class="card-body">
-                  <h5 class="card-title">Weight in Pounds</h5>
-                  <p class="card-text" id="poundOutput"></p>
-                </div>
-              </div>
-
-              <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
-                <div class="card-header">Ounces</div>
-                <div class="card-body">
-                  <h5 class="card-title">Weight In Ounces</h5>
-                  <p class="card-text" id="ozOutput"></p>
+                  <h5 class="card-title">Weight In Grams</h5>
+                  <p class="card-text" id="gramsOutput">g</p>
                 </div>
               </div>
         </div>
-      </div>
+
+       <div class="col-md-4">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem">
+            <div class="card-header">Pounds</div>
+            <div class="card-body">
+              <h5 class="card-title">Weight in Pounds</h5>
+              <p class="card-text" id="poundOutput"></p>
+            </div>
+          </div>
+       </div>
+
+       <div class="col-md-4">
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem">
+            <div class="card-header">Ounces</div>
+            <div class="card-body">
+              <h5 class="card-title">Weight in Ounces</h5>
+              <p class="card-text" id="ozOutput"></p>
+            </div>
+          </div>
+       </div> 
+
+
+      
+</div>
+</div>
+
     </div>
   </body>
 
