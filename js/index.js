@@ -18,3 +18,20 @@ EnterWeight.addEventListener("input", function (e) {
   pound.innerHTML = kg * 2.20462;
   Ounces.innerHTML = kg * 35.274;
 });
+
+
+
+
+
+
+
+
+
+
+<div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Ounces</div>
+  <div class="card-body">
+    <h5 class="card-title">Weight In Ounces</h5>
+    <p class="card-text" id="ozOutput"></p>
+  </div>
+</div>
